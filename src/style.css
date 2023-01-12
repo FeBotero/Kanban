@@ -1,0 +1,129 @@
+li {
+  list-style-type: none;
+}
+.kanban {
+  display: grid;
+}
+.kanbanGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  width: auto;
+  text-align: center;
+}
+
+#Projects {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a0 {
+  background: rgb(139, 139, 139);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+
+.a1 {
+  background: purple;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+  transition: all infinit;
+  transform: rotate(0);
+}
+
+.a1:active {
+  border-radius: 5%;
+  animation: rotateElement 1s;
+  animation-iteration-count: infinite;
+  background-color: red;
+}
+@keyframes rotateElement {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.a2 {
+  background: yellowgreen;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+.a3 {
+  background: rgb(50, 143, 205);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+.a4 {
+  background: rgb(231, 178, 108);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+.a5 {
+  background: rgb(144, 79, 204);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+.a6 {
+  background: rgb(121, 56, 81);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+}
+.a7 {
+  background: rgb(90, 90, 90);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.completed {
+  opacity: 0.3;
+}
